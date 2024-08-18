@@ -1,10 +1,20 @@
 import express from "express";
-
+import cors from "cors"
 const app = express();
+
+
+app.use(cors({
+    origin: '*',  // Adjust according to your security needs
+    methods: 'GET,POST',
+    allowedHeaders: 'Content-Type',
+  }));
 
 app.get("/", (req, res) => {
     res.send("server is running");
 });
+
+
+
 
 app.get("/api/product", (req, res) => {
     const products = [
