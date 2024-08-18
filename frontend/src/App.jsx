@@ -13,9 +13,7 @@ function App() {
      console.log(data)
   }
 
-  const getNoon=()=>{
-    const {data}= await axios.get("")
-  }
+ 
 
   return (
     <>
