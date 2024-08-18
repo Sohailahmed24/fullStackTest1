@@ -9,8 +9,12 @@ function App() {
   },[])
 
   const getapi=async()=>{
-     const {data}= await axios.get("http://localhost:8080/api/product")
+     const {data}= await axios.get("https://full-stack-test1.vercel.app/api/product")
      console.log(data)
+  }
+
+  const getNoon=()=>{
+    const {data}= await axios.get("")
   }
 
   return (
